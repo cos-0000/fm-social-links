@@ -90,7 +90,7 @@ ul {
 }
 li {
 	background-color: var(--clr-grey-700);
-	padding: 0.8em 10%;
+	padding: 0.7em 10%;
 	margin-top: 1em;
 	text-align: center;
 	cursor: pointer;
@@ -110,10 +110,12 @@ a {
 	transition-duration: var(--duration);
 	transition-timing-function: ease-in-out;
 }
-li:hover {
+li:hover,
+li:focus {
 	background-color: var(--clr-green);
 }
-li:hover a {
+li:hover a,
+li:focus a {
 	color: var(--clr-grey-900);
 }
 .attribution {
@@ -128,4 +130,19 @@ li:hover a {
 }
 .attribution div > a:hover {
 	color: var(--clr-green);
+}
+
+@media (max-width: 375px) {
+	h1 {
+		font-size: 1.5rem;
+	}
+	h4 {
+		font-size: 0.8rem;
+	}
+	p {
+		font-size: 0.75rem;
+	}
+	main {
+		margin: 0 0.5em;
+	}
 }
