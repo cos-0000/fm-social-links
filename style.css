@@ -28,6 +28,7 @@ body {
 	margin: 0;
 	font-family: Inter;
 	background-color: var(--clr-grey-900);
+	overflow: hidden;
 }
 .container {
 	display: flex;
@@ -69,6 +70,7 @@ h4 {
 	color: var(--clr-green);
 }
 p {
+	font-size: var(--fs-body);
 	padding: 2.5em 0 1em 0;
 }
 img {
@@ -76,9 +78,7 @@ img {
 	width: 100px;
 	height: 100px;
 }
-header p {
-	font-size: 14px;
-}
+
 section,
 header,
 li,
@@ -88,10 +88,9 @@ a {
 ul {
 	list-style-type: none;
 }
-
 li {
 	background-color: var(--clr-grey-700);
-	padding: 1em 10%;
+	padding: 0.8em 10%;
 	margin-top: 1em;
 	text-align: center;
 	cursor: pointer;
@@ -99,6 +98,7 @@ li {
 	transition-property: background-color;
 }
 a {
+	font-size: var(--fs-body);
 	white-space: nowrap;
 	text-decoration: none;
 	text-align: center;
@@ -115,4 +115,17 @@ li:hover {
 }
 li:hover a {
 	color: var(--clr-grey-900);
+}
+.attribution {
+	position: relative;
+	top: -5rem;
+	color: var(--clr-white);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5em 0;
+}
+.attribution div > a:hover {
+	color: var(--clr-green);
 }
